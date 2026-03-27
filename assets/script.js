@@ -1,7 +1,6 @@
-﻿function updateName(){const input=document.getElementById("nameInput");const display=document.getElementById("welcome-msg");if(input && display){if(input.value.length>0){display.innerText="Hello, "+input.value+"!"}else{display.innerText="Welcome"}}}
-function changeColor(){const body=document.body;body.classList.toggle("bg-dark");body.classList.toggle("text-white")}
-async function fetchAdvice(){const adviceElement=document.getElementById("advice-text");if(!adviceElement)return;try{const response=await fetch("https://api.adviceslip.com/advice");const data=await response.json();adviceElement.innerText="\""+data.slip.advice+"\""}catch(error){adviceElement.innerText="Internet error."}}
-function sendMessage(){const msg=document.getElementById("userMsg").value;const status=document.getElementById("status");if(msg.length>0){status.innerText="Message Sent: " + msg;document.getElementById("userMsg").value=""}else{status.style.color="red";status.innerText="Please type a message first!"}}
+﻿function updateName(){const i=document.getElementById("nameInput"),d=document.getElementById("welcome-msg");i&&d&&(d.innerText=i.value.length>0?"Hello, "+i.value+"!":"Welcome")}
+function changeColor(){document.body.classList.toggle("bg-dark");document.body.classList.toggle("text-white")}
+async function fetchAdvice(){const e=document.getElementById("advice-text");if(e)try{const t=await fetch("https://api.adviceslip.com/advice"),a=await t.json();e.innerText="\""+a.slip.advice+"\""}catch(n){e.innerText="Error."}}
+function sendMessage(){const e=document.getElementById("userMsg").value,t=document.getElementById("status");e.length>0?(t.innerText="Message Sent: "+e,document.getElementById("userMsg").value=""): (t.style.color="red",t.innerText="Type a message!")}
+function copyUPI(){const u="soumodityapramanik-1@okicici";navigator.clipboard.writeText(u);const s=document.getElementById("status");s.style.color="green";s.innerText="UPI ID Copied!";setTimeout(()=>{s.innerText=""},2000)}
 window.onload=fetchAdvice
-
-function copyUPI(){const upi='soumodityapramanik-1@okicici';navigator.clipboard.writeText(upi);const status=document.getElementById('status');status.innerText='UPI ID Copied!';setTimeout(()=>{status.innerText=''},2000)}
