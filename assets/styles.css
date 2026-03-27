@@ -2,3 +2,5 @@
 .custom-card { width: 380px; border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); padding: 2rem; }
 .profile-img { width: 100px; height: 100px; object-fit: cover; border: 3px solid #007bff; }
 .nav-pill-custom { background: white; border-radius: 50px; padding: 0.5rem 1.5rem; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+
+img { max-width: 100%; height: auto; } .profile-img { width: 120px !important; height: 120px !important; object-fit: cover; border-radius: 50%; border: 4px solid #007bff; margin: 0 auto; display: block; }
