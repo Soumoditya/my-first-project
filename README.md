@@ -1,1 +1,16 @@
-﻿# Soumoditya Portfolio Project\n\nThis is a live, interactive web application built with a professional developer workflow.\n\n### 🛠️ Tech Stack\n- **Framework:** [Bootstrap 5](https://getbootstrap.com/)\n- **Logic:** JavaScript (ES6+)\n- **Data:** Advice Slip JSON API\n- **Hosting:** GitHub Pages\n- **Automation:** PowerShell CLI Workflow\n\n### 🚀 Features\n- Real-time user input handling\n- Live API data fetching\n- Responsive "Card" UI\n- Dynamic Theme Toggling
+﻿# Soumoditya Portfolio Project
+
+This is a live, interactive web application built with a professional developer workflow.
+
+### 🛠️ Tech Stack
+- **Framework:** [Bootstrap 5](https://getbootstrap.com/)
+- **Logic:** JavaScript (ES6+)
+- **Data:** Advice Slip JSON API
+- **Hosting:** GitHub Pages
+- **Automation:** PowerShell CLI Workflow
+
+### 🚀 Features
+- Real-time user input handling
+- Live API data fetching
+- Responsive "Card" UI
+- Dynamic Theme Toggling
