@@ -5,3 +5,5 @@ function sendMessage(){const e=document.getElementById("userMsg").value,t=docume
 function copyUPI(){const u="soumodityapramanik-1@okicici";navigator.clipboard.writeText(u);const s=document.getElementById("status");s.style.color="green";s.innerText="UPI ID Copied!";setTimeout(()=>{s.innerText=""},2000)}
 function updateClock(){const n=new Date(),c=document.getElementById("clock"),d=document.getElementById("date");if(c&&d){c.innerText=n.toLocaleTimeString("en-US",{hour12:true,hour:"2-digit",minute:"2-digit",second:"2-digit"});d.innerText=n.toLocaleDateString("en-US",{weekday:"long",year:"numeric",month:"long",day:"numeric"})}}
 document.addEventListener("DOMContentLoaded",()=>{fetchAdvice();updateClock();setInterval(updateClock,1000)});
+
+function celebrate(){confetti({particleCount:100,spread:70,origin:{y:0.6},colors:['#007bff','#28a745','#ffc107']})}
